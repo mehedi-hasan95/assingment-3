@@ -1,3 +1,48 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+.carousel-bg {
+    background-image: url(images/cover/img-3.png);
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.carousel-bg:nth-child(2) {
+    background-image: url(images/cover/cover-1.png);
+}
+
+.carousel-bg:nth-child(2) {
+    background-image: url(images/cover/cover-2.png);
+}
+
+.custom-padding {
+    padding: 11rem 0;
+}
+
+.custom-padding-2 {
+    padding: 7rem 0;
+}
+
+.carousel-bg .flex {
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.carousel-bg .flex:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    content: "";
+    opacity: 0.5;
+    z-index: -1;
+    border-radius: 10px;
+}
+
